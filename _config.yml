@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Dům kultury a únavy 😴
+title: Dům kultury a únavy
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Společný výroční projekt HaDivadla a Terénu, scén CED, p.o.
@@ -31,7 +31,7 @@ collections:
     output: true
 
 nav:
-  - text: Dům kultury a únavy 😴
+  - text: Dům kultury a únavy
     url: /
   - text: Program
     url: /program
