@@ -1,0 +1,36 @@
+<div
+  class="slot my-1 relative text-white"
+  style="top: 0rem; height: 4.25rem; z-index: 1"
+  data-friday-start="{{item.friday.start}}"
+  data-friday-end="{{item.friday.end}}"
+  data-saturday-start="{{item.saturday.start}}"
+  data-saturday-end="{{item.saturday.end}}"
+>
+  <div
+    class="
+      border-line
+      bg-black
+      rounded-sm
+      flex flex-wrap
+      font-medium
+      items-end
+      mx-0.5
+      py-2
+    "
+    data-event=""
+  >
+    <div class="w-full overflow-hidden">
+      <div class="truncate left-0 px-2">
+        <a
+          class="-t- underline hover:no-underline"
+          href="{{site.baseurl}}{{item.url}}"
+        >
+          {{item.title}}
+        </a>
+      </div>
+    </div>
+    <div class="flex-grow">
+      <span class="whitespace-no-wrap left-0 px-2">{{item.author}}</span>
+    </div>
+  </div>
+</div>

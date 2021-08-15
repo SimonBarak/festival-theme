@@ -1,0 +1,16 @@
+<nav id="navmenu" class="fixed w-full min-h-full top-0 right-0 z-10 hidden">
+  {% assign navurl = page.url | remove: 'index.html' %}
+  <ul class="man-nav__items mx-auto mt-20 border-t-2 border-black" >
+    {% for item in include.navigation %}
+    <li>
+      <a
+        class="block text-center font-bold py-5 px-4 md:px-10  hover:bg-gray-400 border-b-2 text-xl md:text-3xl lg:text-4xl transition border-black"
+        href="{{ item.url | relative_url }}"
+        {% if item.url == navurl %} data-current="current page"{% endif %}
+        >
+       {{ item.text }}
+        </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

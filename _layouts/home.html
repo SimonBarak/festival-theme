@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="prose mx-auto mb-20">{{ content }}</div>
+
+<div class="flex flex-wrap justify-center max-w-4xl mx-auto">
+  <!-- - -->{% assign items = site.program | sort: 'friday.start' %}
+  <!-- - -->{% for item in items %}
+  <!-- - -->{% if item.friday.start %}
+  <!-- - -->{%- include event-entry.html -%}
+  <!-- - -->{% endif %}
+  <!-- - -->{% endfor %}
+</div>

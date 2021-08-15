@@ -1,0 +1,10 @@
+# specify main menu items here
+
+- text: Projekty
+  url: /projekty
+- text: O Studiu
+  url: /studio
+- text: Studio ve zprávách
+  url: /zpravy
+- text: Kontakt
+  url: /kontakt
