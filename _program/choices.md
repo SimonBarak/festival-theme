@@ -1,6 +1,6 @@
 ---
 layout: event
-thumb: Henrichova_Kríž
+thumb: Henrichova_Kriz
 stage: Horní foyer
 title: "Choices"
 slug: "-"

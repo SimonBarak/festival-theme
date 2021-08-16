@@ -1,6 +1,6 @@
 ---
 layout: event
-thumb: xx
+thumb: ""
 title: "Prostor pro děti"
 slug: "-"
 more: "autonomní světy"

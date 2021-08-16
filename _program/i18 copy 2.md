@@ -1,6 +1,6 @@
 ---
 layout: event
-thumb: xx
+thumb: ""
 title: "Bar"
 slug: "-"
 more: ""
