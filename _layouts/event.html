@@ -2,20 +2,32 @@
 layout: default
 ---
 
-<div class="prose mx-auto mb-10">
+<div class="prose mx-auto border-b-2 border-gray-500 pb-10 mb-10">
   <h1>{{page.title}} / {{page.author}}</h1>
-
-  <h2>{{page.more}}</h2>
-
-  <div class="flex">
-    <div class="text-2xl font-bold flex-1 block">
-      {% if page.friday %} Pátek {{page.friday.start}}0 - {{page.friday.end}}0
-      {% endif %}
+  <div class="flex mb-5">
+    <div class="flex-1">
+      <div class="text-xl font-bold">{{page.more}}</div>
     </div>
-    <div class="text-2xl font-bold block">{{page.stage}}</div>
+    <div class="text-xl font-bold block">{{page.stage}}</div>
+  </div>
+  <div class="text-xl font-bold block">
+    {% if page.friday %} Pátek {{page.friday.start}}0 - {{page.friday.end}}0 {%
+    endif %}
+  </div>
+  <div class="text-xl font-bold block">
+    {% if page.saturday %} Sobota {{page.saturday.start}}0 -
+    {{page.saturday.end}}0 {% endif %}
   </div>
 
-  {{ content }}
+  {{ page.content }} {%if page.thumb != "" %}
+  <img
+    class="w-40"
+    src="/assets/artist/{{ page.thumb }}.jpg"
+    alt="{{ page.author }}"
+  />
+  {% endif %}
+
+  <div class="bg-green-200">{{ page.bio }}</div>
 </div>
 <div class="flex flex-center">
   <a

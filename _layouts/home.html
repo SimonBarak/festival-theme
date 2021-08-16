@@ -2,13 +2,16 @@
 layout: default
 ---
 
-<div class="prose mx-auto mb-20">{{ content }}</div>
+<div class="prose mx-auto mb-20 wtf">{{ content }}</div>
 
 <div class="flex flex-wrap justify-center max-w-4xl mx-auto">
-  <!-- - -->{% assign items = site.program | sort: 'friday.start' %}
+  <!-- - -->{% assign items = site.program %}
   <!-- - -->{% for item in items %}
-  <!-- - -->{% if item.friday.start %}
   <!-- - -->{%- include event-entry.html -%}
-  <!-- - -->{% endif %}
   <!-- - -->{% endfor %}
 </div>
+
+<div class="fixed top-0 left-0 right-0 bottom-0 bg-white" style="z-index: -1">
+  <img class="w-full object-cover" src="./assets/bg.jpg" alt="" />
+</div>
+<!-- //https://res.cloudinary.com/dhxmg9p4i/image/upload/v1629123059/bg.jpg -->

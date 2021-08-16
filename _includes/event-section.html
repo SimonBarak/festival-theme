@@ -1,0 +1,28 @@
+<div class="prose mx-auto border-b-2 border-gray-500 pb-10 mb-10">
+  <h1>{{item.title}} / {{item.author}}</h1>
+
+  <div class="flex mb-5">
+    <div class="flex-1">
+      <div class="text-xl font-bold">{{item.more}}</div>
+    </div>
+    <div class="text-xl font-bold block">{{item.stage}}</div>
+  </div>
+  <div class="text-xl font-bold block">
+    {% if item.friday %} Pátek {{item.friday.start}}0 - {{item.friday.end}}0 {%
+    endif %}
+  </div>
+  <div class="text-xl font-bold block">
+    {% if item.saturday %} Sobota {{item.saturday.start}}0 -
+    {{item.saturday.end}}0 {% endif %}
+  </div>
+
+  {{ item.content }} {%if item.thumb != "" %}
+  <img
+    class="w-40"
+    src="/assets/artist/{{ item.thumb }}.jpg"
+    alt="{{ item.author }}"
+  />
+  {% endif %}
+
+  <div class="bg-green-200">{{ item.bio }}</div>
+</div>

@@ -7,6 +7,8 @@ layout: home
 
 # Dům kultury a únavy 😴
 
+## 20. 8. - 21. 8. v Hadivadle
+
 ## Společný výroční projekt HaDivadla <br/> a Terénu, scén CED, p.o.
 
 ## [ událost na facebooku 👍 ](https://www.facebook.com/events/501156767810484)

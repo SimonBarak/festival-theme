@@ -13,6 +13,18 @@ $color: #000000;
   background-color: #4423f6;
 }
 
-.text-main {
+.text-main,
+.text-main h1,
+.text-main h2,
+.text-main a {
+  color: #4423f6 !important;
+}
+
+.wtf h1,
+.wtf h2,
+.wtf a {
   background-color: #4423f6;
+  color: white !important;
+  padding: 0.5rem;
+  display: inline-block;
 }

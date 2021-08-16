@@ -6,7 +6,7 @@ $size: 2.5em;
 $size-sm: 1em;
 $line-height: 0.3em;
 $line-height-sm: 0.15em;
-$color: #000000;
+$color: #4423f6;
 
 /* mixin */
 @mixin crossB($property, $val) {
@@ -17,9 +17,12 @@ $color: #000000;
 }
 
 .menu-is-open {
-  main,
-  footer {
-    filter: blur(50px);
+  overflow: hidden;
+  & {
+    main,
+    footer {
+      filter: blur(50px);
+    }
   }
 }
 
@@ -56,6 +59,8 @@ $color: #000000;
   cursor: pointer;
   @include crossB(transform, rotate(0deg));
   @include crossB(transition, 0.5s ease-in-out);
+  background-color: white;
+  padding: 0.5rem;
 
   div {
     position: absolute;
