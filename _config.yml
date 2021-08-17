@@ -33,8 +33,8 @@ collections:
 nav:
   - text: Dům kultury a únavy
     url: /
-  - text: Únava
-    url: /unava
+  - text: Fragment neúplného atlasu regenerace
+    url: /fragment
   - text: O projektu
     url: /o-projektu
   - text: Program

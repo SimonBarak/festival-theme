@@ -13,21 +13,22 @@ layout: default
     <div class="text-xl font-bold block">{{page.stage}}</div>
   </div>
   <div class="text-xl font-bold block">
-    {% if page.friday %} Pátek {{page.friday.start}}0 - {{page.friday.end}}0 {%
+    {% if page.friday %} Pátek {{page.friday.start}}0—{{page.friday.end}}0{%
     endif %}
   </div>
   <div class="text-xl font-bold block">
-    {% if page.saturday %} Sobota {{page.saturday.start}}0 -
-    {{page.saturday.end}}0 {% endif %}
+    {% if page.saturday %} Sobota
+    {{page.saturday.start}}0—{{page.saturday.end}}0{% endif %}
   </div>
 
-  {{ page.content }} {%if page.thumb != "" %}
-  <img
-    class="w-48"
-    src="/assets/artist/{{ page.thumb }}.jpg"
-    alt="{{ page.author }}"
-  />
-  {% endif %} {% for item in page.bio %}
+  {{ page.content }}
+  <div class="flex">
+    {%if page.thumb[0] %} {% for thumb in page.thumb %}
+    <img class="w-48" src="/assets/artist/{{ thumb }}.jpg" alt="{{ thumb }}" />
+
+    {% endfor %} {% endif %}
+  </div>
+  {% for item in page.bio %}
   <div class="bg-green-200 mb-2">{{ item }}</div>
   {% endfor %}
 </div>

@@ -6,8 +6,8 @@ layout: default
 
 <div class="flex flex-wrap justify-center max-w-4xl mx-auto">
   <!-- - -->{% assign items = site.program %}
-  <!-- - -->{% for item in items %}
-  <!-- - -->{%- include event-entry.html -%}
+  <!-- - -->{% for item in items %} {% if item.homepageBan != true%}
+  <!-- - -->{%- include event-entry.html -%} {% endif %}
   <!-- - -->{% endfor %}
 </div>
 

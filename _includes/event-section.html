@@ -10,21 +10,23 @@
     <div class="text-xl font-bold block">{{item.stage}}</div>
   </div>
   <div class="text-xl font-bold block">
-    {% if item.friday %} Pátek {{item.friday.start}}0 - {{item.friday.end}}0 {%
+    {% if item.friday %} Pátek {{item.friday.start}}0—{{item.friday.end}}0 {%
     endif %}
   </div>
   <div class="text-xl font-bold block">
-    {% if item.saturday %} Sobota {{item.saturday.start}}0 -
-    {{item.saturday.end}}0 {% endif %}
+    {% if item.saturday %} Sobota
+    {{item.saturday.start}}0—{{item.saturday.end}}0{% endif %}
   </div>
 
-  {{ item.content }} {%if item.thumb != "" %}
-  <img
-    class="w-48"
-    src="/assets/artist/{{ item.thumb }}.jpg"
-    alt="{{ item.author }}"
-  />
-  {% endif %} {% for bio in item.bio %}
+  {{ item.content }}
+
+  <div class="flex">
+    {%if item.thumb[0] %} {% for thumb in item.thumb %}
+    <img class="w-48" src="/assets/artist/{{ thumb }}.jpg" alt="{{ thumb }}" />
+
+    {% endfor %} {% endif %}
+  </div>
+  {% for bio in item.bio %}
   <div class="bg-green-200 mb-2">{{ bio }}</div>
   {% endfor %}
 </div>
