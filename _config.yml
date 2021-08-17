@@ -33,14 +33,14 @@ collections:
 nav:
   - text: Dům kultury a únavy
     url: /
-  - text: Program
-    url: /program
-  - text: Vstupenky
-    url: /vstupenky
   - text: Únava
     url: /unava
   - text: O projektu
     url: /o-projektu
+  - text: Program
+    url: /program
+  - text: Vstupenky
+    url: /vstupenky
   - text: Kontakt
     url: /kontakt
 

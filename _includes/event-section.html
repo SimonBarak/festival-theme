@@ -1,5 +1,7 @@
 <div class="prose mx-auto border-b-2 border-gray-500 pb-10 mb-10">
-  <h1>{{item.title}} / {{item.author}}</h1>
+  <h1>
+    {{item.title}} {% if item.author != "" %} / {{item.author}} {% endif %}
+  </h1>
 
   <div class="flex mb-5">
     <div class="flex-1">
@@ -22,7 +24,7 @@
     src="/assets/artist/{{ item.thumb }}.jpg"
     alt="{{ item.author }}"
   />
-  {% endif %}
-
-  <div class="bg-green-200">{{ item.bio }}</div>
+  {% endif %} {% for bio in item.bio %}
+  <div class="bg-green-200 mb-2">{{ bio }}</div>
+  {% endfor %}
 </div>
