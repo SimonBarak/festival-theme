@@ -1,7 +1,7 @@
 ---
 layout: document
----
 
+---
 # Fragment neúplného atlasu regenerace
 
 V přípravě Domu kultury a únavy jsme se soustředili na problematiku únavy a regenerace. Vyčerpání a posílení. Pracovně jsme téma rozčlenili do tří rovin — subjektivní, společenské a ekosystémové. Rozčlenění je to nedokonalé a hrubé, ale slouží pro základní orientaci. Řešili jsme totiž problém, jak uchopit téma tak velké, jako je klimatická krize.
@@ -21,22 +21,24 @@ Ve sdíleném dokumentu můžete vznikající text komentovat, napadat, strhat, 
 </a>
 
 <div class="flex flex-center">
-    <a
-      class="
-        text-xl
-        lg:text-xl
-        py-2
-        px-3
-        lg:px-10
-        mt-10
-        text-center
-        rounded-lg
-        transition
-        inline-block
-        mx-auto
-      "
-      href="https://docs.google.com/document/d/1ICiBES4IwqPBZYVKaBuA9n0fBu0yDRugCz5QH5hkaA0/edit?usp=sharing"
-    >
-      Čtěte dále
-    </a>
-  </div>
+<a
+class="
+text-xl
+lg:text-xl
+py-2
+px-3
+lg:px-10
+mt-10
+text-center
+rounded-lg
+transition
+inline-block
+mx-auto
+"
+href="https://docs.google.com/document/d/1ICiBES4IwqPBZYVKaBuA9n0fBu0yDRugCz5QH5hkaA0/edit?usp=sharing"
+>
+Čtěte dále
+</a>
+</div>
+
+Tento dokument bude sloužit jako část připravovaného sborníku “Neúplný atlas regenerace, který koncem roku vyjde v koedici nakladatelství FaVU a Utopia Libri.
